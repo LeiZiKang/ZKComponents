@@ -9,7 +9,7 @@ import UIKit
 
 extension UIApplication {
     
-    func getRootViewController() -> UIViewController? {
+    public func getRootViewController() -> UIViewController? {
         // 尝试从当前活动场景中获取根视图控制器
         if #available(iOS 13.0, *) {
             if let scene = self.connectedScenes.first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
