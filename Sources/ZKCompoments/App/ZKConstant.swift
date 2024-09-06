@@ -27,5 +27,5 @@ public let screenH = Device.current.screenSize.height
 public let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
 /// appDisplayName
-let appDisplayName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String
+public let appDisplayName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String
 
