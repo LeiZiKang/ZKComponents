@@ -1,6 +1,6 @@
 //
 //  SwiftUIView.swift
-//  
+//
 //
 //  Created by 雷子康 on 2024/9/6.
 //
@@ -10,11 +10,14 @@ import SwiftUI
 @available(iOS 13.0, *)
 /// 圆形水波浪进度条
 public struct ZKProgressView: View {
-    @State public var waveOffset: Angle = .zero
+    @State private var waveOffset: Angle = .zero
     @Binding public var progress: Double
-    @State public var xOffset: CGFloat = .zero
+    @State private var xOffset: CGFloat = .zero
     
- 
+    public init(_ progress: Binding<Double>) {
+        self._progress = progress
+    }
+    
     public var body: some View {
         ZStack {
             Circle().stroke(.blue, lineWidth: 2)
