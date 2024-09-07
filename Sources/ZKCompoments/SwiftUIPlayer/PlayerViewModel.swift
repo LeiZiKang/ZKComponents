@@ -19,4 +19,8 @@ public class PlayerViewModel: ObservableObject {
         player = AVPlayer(url: url)
     }
     
+    deinit {
+        
+    }
+    
 }
