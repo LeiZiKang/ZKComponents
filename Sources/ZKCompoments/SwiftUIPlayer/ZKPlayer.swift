@@ -16,7 +16,7 @@ public struct ZKPlayer: View {
   
     
     public var body: some View {
-        VideoPlayerView(player: viewModel.player, timecodes: viewModel.timecodes)
+        VideoPlayerView(player: $viewModel.player, timecodes: viewModel.timecodes)
             .onDisappear(perform: {
                 viewModel.player.pause()
             })
