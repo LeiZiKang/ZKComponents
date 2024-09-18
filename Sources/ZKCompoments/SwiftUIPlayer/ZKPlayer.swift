@@ -7,24 +7,11 @@ import SwiftUI
 public struct ZKPlayer: View {
     
     @ObservedObject public var viewModel: PlayerViewModel
-    @State var showTimeCodeList: Bool
-    public init(url: URL, timecodes: [Timecode], showTimeCodeList: Bool) {
+    public init(url: URL, timecodes: [Timecode]) {
         self.viewModel = PlayerViewModel(url: url, timecodes: timecodes)
-        self.showTimeCodeList = showTimeCodeList
     }
-    
-  
-    
+
     public var body: some View {
-        VideoPlayerView(player: $viewModel.player, timecodes: viewModel.timecodes)
-//            .onAppear(perform: {
-//                viewModel.player.play()
-//            })
-//            .onDisappear(perform: {
-//                viewModel.player.pause()
-//            })
-//        if showTimeCodeList {
-//            TimecodeListView(player: viewModel.player, timecodes: viewModel.timecodes)
-//        }
+        VideoPlayerView(player: viewModel.player, timecodes: viewModel.timecodes)
     }
 }
