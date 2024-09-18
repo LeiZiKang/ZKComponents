@@ -17,14 +17,14 @@ public struct ZKPlayer: View {
     
     public var body: some View {
         VideoPlayerView(player: $viewModel.player, timecodes: viewModel.timecodes)
-            .onAppear(perform: {
-                viewModel.player.play()
-            })
-            .onDisappear(perform: {
-                viewModel.player.pause()
-            })
-        if showTimeCodeList {
-            TimecodeListView(player: viewModel.player, timecodes: viewModel.timecodes)
-        }
+//            .onAppear(perform: {
+//                viewModel.player.play()
+//            })
+//            .onDisappear(perform: {
+//                viewModel.player.pause()
+//            })
+//        if showTimeCodeList {
+//            TimecodeListView(player: viewModel.player, timecodes: viewModel.timecodes)
+//        }
     }
 }
