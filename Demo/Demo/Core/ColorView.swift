@@ -9,6 +9,7 @@ import SwiftUI
 import ZKCompoments
 
 struct ColorView: View {
+    let uiImg = UIImage(named: "Wooden Shelves Kitchen")!
     var body: some View {
         List {
             // swiftUI
@@ -33,8 +34,18 @@ struct ColorView: View {
                     .padding()
             }
         }
-      
-        
+        .onAppear{
+            getUIImageColors()
+        }
+    }
+    /// 精确获取UIImage中某个点的颜色
+    func getUIImageColors() {
+        let colors = uiImg.colors()
+        uiImg.color(at: CGPoint(x: 0, y: 0)) { uiColor in
+            if let uiColor = uiColor {
+                
+            }
+        }
     }
 }
 
