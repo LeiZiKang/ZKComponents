@@ -40,3 +40,8 @@ let secondGradient = [UIColor.blackColor(), UIColor.orangeColor()].gradient { gr
 let image = UIImage(named: "My Image")
 let (background, primary, secondary, detail) = image.colors()
 ```
+
+## Thanks
+https://github.com/zenangst/Hue
+https://github.com/Ekhoo/Device
+https://github.com/yannickl/DynamicColor
