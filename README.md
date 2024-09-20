@@ -42,6 +42,6 @@ let (background, primary, secondary, detail) = image.colors()
 ```
 
 ## Thanks
-https://github.com/zenangst/Hue
-https://github.com/Ekhoo/Device
-https://github.com/yannickl/DynamicColor
+https://github.com/zenangst/Hue 
+https://github.com/Ekhoo/Device 
+https://github.com/yannickl/DynamicColor 
