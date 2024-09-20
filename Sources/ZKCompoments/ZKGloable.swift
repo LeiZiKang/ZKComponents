@@ -8,14 +8,10 @@
 import Foundation
 import UIKit
 
-// MARK:  Screen
+// MARK: - Constant
 
 /// 状态栏高度
-public let statusBarH =  UIApplication.shared.statusBarFrame.size.height
-
-///设备屏幕大小
-public let screenFrame = UIScreen.main.bounds
-
+public let zkStatusBarH =  UIApplication.shared.statusBarFrame.size.height
 
 ///设备屏幕宽
 public let screenW = Device.current.screenSize.width
@@ -29,3 +25,11 @@ public let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"
 /// appDisplayName
 public let appDisplayName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String
 
+
+// MARK: - Function
+
+/// 复制到剪切板
+public func zkCopyToClipboard(text: String, completion: @escaping() -> Void) {
+    UIPasteboard.general.string = text
+    completion()
+}

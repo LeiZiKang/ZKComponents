@@ -13,7 +13,7 @@ struct ContentView: View {
         NavigationStack {
      
             NavigationLink("Color", destination: ColorView())
-            
+                .padding()
         }
         .padding()
     }

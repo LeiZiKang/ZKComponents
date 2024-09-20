@@ -20,7 +20,7 @@ extension String {
     
     
     /// 转化为在线 url
-    public func onlineUrl() -> URL? {
+    public func zkOnlineUrl() -> URL? {
         return URL(string: self)
     }
     

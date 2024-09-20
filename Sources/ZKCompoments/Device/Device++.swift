@@ -1009,7 +1009,8 @@ public enum Device {
         case .iPadPro13M4: return (width: 1024, height: 1366)
         case .homePod: return (width: 4, height: 5)
         case .simulator(let model): return model.screenSize
-        case .unknown: return (width: -1, height: -1)
+        case .unknown: return (width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+        default: return (width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
         }
         #else
         return (width: -1, height: -1)
@@ -2565,4 +2566,12 @@ extension Device.CPU: CustomStringConvertible {
   }
 }
 
+extension Device {
+    ///设备屏幕大小
+    public var screenFrame: CGRect {
+        get {
+            return UIScreen.main.bounds
+        }
+    }
+}
 

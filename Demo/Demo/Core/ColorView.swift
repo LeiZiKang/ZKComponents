@@ -20,6 +20,7 @@ struct ColorView: View {
                 Color(hexString: "#3498dbff")
                     .clipShape(.circle)
                     .padding()
+                
             }
             // UIKit
             HStack {

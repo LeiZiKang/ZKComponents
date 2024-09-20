@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD2C85632C9CC8E5006FE702 /* ZKCompoments in Frameworks */ = {isa = PBXBuildFile; productRef = DD2C85622C9CC8E5006FE702 /* ZKCompoments */; };
+		DD2C85792C9D5FBB006FE702 /* ZKCompoments in Frameworks */ = {isa = PBXBuildFile; productRef = DD2C85782C9D5FBB006FE702 /* ZKCompoments */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD2C85632C9CC8E5006FE702 /* ZKCompoments in Frameworks */,
+				DD2C85792C9D5FBB006FE702 /* ZKCompoments in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +38,7 @@
 			isa = PBXGroup;
 			children = (
 				DD2C85522C9CC897006FE702 /* Demo */,
+				DD2C85772C9D5FBB006FE702 /* Frameworks */,
 				DD2C85512C9CC897006FE702 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +49,13 @@
 				DD2C85502C9CC897006FE702 /* Demo.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DD2C85772C9D5FBB006FE702 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,7 +78,7 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				DD2C85622C9CC8E5006FE702 /* ZKCompoments */,
+				DD2C85782C9D5FBB006FE702 /* ZKCompoments */,
 			);
 			productName = Demo;
 			productReference = DD2C85502C9CC897006FE702 /* Demo.app */;
@@ -342,8 +350,9 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		DD2C85622C9CC8E5006FE702 /* ZKCompoments */ = {
+		DD2C85782C9D5FBB006FE702 /* ZKCompoments */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = DD2C85612C9CC8E5006FE702 /* XCLocalSwiftPackageReference "../../ZKComponents" */;
 			productName = ZKCompoments;
 		};
 /* End XCSwiftPackageProductDependency section */
