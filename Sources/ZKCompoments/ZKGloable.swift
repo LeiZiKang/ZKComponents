@@ -19,11 +19,7 @@ public let screenW = Device.current.screenSize.width
 /// 设备屏幕高
 public let screenH = Device.current.screenSize.height
 
-/// app 版本
-public let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
 
-/// appDisplayName
-public let appDisplayName = Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String
 
 
 // MARK: - Function
