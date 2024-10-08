@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(macOS 10.15, *)
 @available(iOS 13.0, *)
 extension View {
     
@@ -44,6 +45,7 @@ extension View {
 #endif
 }
 
+@available(macOS 10.15, *)
 @available(iOS 13.0, *)
 private struct ExampleButtonStyle: ButtonStyle {
     let foreground: Color

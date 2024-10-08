@@ -4,7 +4,7 @@
 //
 //  Created by MEETU on 29/7/2024.
 //
-
+#if os(ios)
 import UIKit
 
 extension UIApplication {
@@ -31,3 +31,4 @@ extension UIApplication {
         return nil
     }
 }
+#endif
