@@ -4,7 +4,7 @@
 //
 //  Created by MEETU on 29/7/2024.
 //
-#if os(ios)
+
 import UIKit
 
 extension UIApplication {
@@ -30,5 +30,18 @@ extension UIApplication {
         // 如果以上方法都未获取到根视图控制器，则返回一个默认的视图控制器
         return nil
     }
+    
+    /// 直接退出App
+    /// UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    /// 这个方法会让当前的 first responder 失去响应者状态，通常会触发一些收尾工作，比如关闭键盘。
+    /// exit(0)
+    /// 这个方法会直接终止程序，但是不建议在实际应用中使用，因为它会直接杀死进程，可能导致数据丢失。
+    /// 不建议使用
+    public func exitApp() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        exit(0)
+    }
 }
-#endif
+
+
+
