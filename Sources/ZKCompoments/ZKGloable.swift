@@ -28,6 +28,15 @@ public let screenW = Device.current.screenSize.width
 /// 设备屏幕高
 public let screenH = Device.current.screenSize.height
 
+/// app 版本
+public var appVersion: String {
+    return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? ""
+}
+
+/// diaplayName
+public var appDisplayName: String {
+    return Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String ?? ""
+}
 
 
 
