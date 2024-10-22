@@ -1,4 +1,4 @@
-#if os(ios)
+
 import UIKit
 
 class CountedColor {
@@ -175,4 +175,4 @@ extension UIImage {
     }
   }
 }
-#endif
+
