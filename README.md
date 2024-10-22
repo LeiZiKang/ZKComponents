@@ -30,8 +30,8 @@ As an extra bonus, you can also add a transform closure if you want to modify th
 let gradient = [UIColor.blackColor(), UIColor.orangeColor()].gradient()
 
 let secondGradient = [UIColor.blackColor(), UIColor.orangeColor()].gradient { gradient in
-  gradient.locations = [0.25, 1.0]
-  return gradient
+gradient.locations = [0.25, 1.0]
+return gradient
 }
 ```
 
@@ -41,7 +41,39 @@ let image = UIImage(named: "My Image")
 let (background, primary, secondary, detail) = image.colors()
 ```
 
-## Thanks
+### Num++
+保留两位小数
+```swift
+let a = 28.3213123
+let b: String  = a.twoDecimalPlacesStr()
+```
+
+### String++
+url
+```swift
+let str = "https://github.com/"
+let url: URL? = str.onlineUrl()
+```
+
+### App Info
+``` swift
+let name = .appDisplayName
+let version = .appVersion
+```
+
+### UI
+``` swift 
+// 屏幕宽度
+let width = screenW
+
+// 屏幕高度
+let height = screenH
+
+// 当前设备屏幕大小（逻辑点）
+Device.current.screenSize
+```
+
+## 灵感来源
 https://github.com/zenangst/Hue 
 https://github.com/Ekhoo/Device 
 https://github.com/yannickl/DynamicColor 
