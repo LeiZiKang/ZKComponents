@@ -7,9 +7,11 @@
 
 import SwiftUI
 import ZKCompoments
+import DynamicColor
 
 struct ColorView: View {
     let uiImg = UIImage(named: "Wooden Shelves Kitchen")!
+    @State var show = false
     var body: some View {
         List {
             // swiftUI
@@ -17,7 +19,7 @@ struct ColorView: View {
                 Text("#3498dbff")
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
-                
+                Color(hexString: "#3498dbff")
                 Color(hexString: "#3498dbff")
                     .clipShape(.circle)
                     .padding()
@@ -33,19 +35,32 @@ struct ColorView: View {
                     .clipShape(.circle)
                     .padding()
             }
+            
+            Button {
+                show.toggle()
+            } label: {
+                Text("show universal")
+            }
+            .buttonStyle(.bordered)
         }
+        .univeralOverlay(show: $show, content: {
+            Circle()
+                .fill(.red)
+                .frame(width: 20 , height: 20)
+            
+        })
         .onAppear{
             getUIImageColors()
         }
     }
     /// 精确获取UIImage中某个点的颜色
     func getUIImageColors() {
-        let colors = uiImg.colors()
-        uiImg.color(at: CGPoint(x: 0, y: 0)) { uiColor in
-            if let uiColor = uiColor {
-                
-            }
-        }
+//        let colors = uiImg.colors()
+//        uiImg.color(at: CGPoint(x: 0, y: 0)) { uiColor in
+//            if let uiColor = uiColor {
+//                
+//            }
+//        }
     }
 }
 
