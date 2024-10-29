@@ -68,9 +68,6 @@ let width = screenW
 
 // 屏幕高度
 let height = screenH
-
-// 当前设备屏幕大小（逻辑点）
-Device.current.screenSize
 ```
 
 ## 灵感来源

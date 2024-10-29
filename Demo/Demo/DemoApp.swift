@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import ZKCompoments
 
 @main
 struct DemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView {
+                ContentView()
+            }
         }
     }
 }

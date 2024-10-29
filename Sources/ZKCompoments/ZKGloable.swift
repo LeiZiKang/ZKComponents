@@ -23,10 +23,10 @@ public let zkStatusBarH =  UIApplication.shared.statusBarFrame.size.height
 
 
 ///设备屏幕宽
-public let screenW = Device.current.screenSize.width
+public let screenW = UIScreen.main.bounds.width
 
 /// 设备屏幕高
-public let screenH = Device.current.screenSize.height
+public let screenH = UIScreen.main.bounds.height
 
 /// app 版本
 public var appVersion: String {
