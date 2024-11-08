@@ -7,4 +7,10 @@
 
 import SwiftUI
 
-
+extension Device {
+    
+    /// 当前设备的名字
+    public var deviceName: String {
+        UIDevice.current.name
+    }
+}
