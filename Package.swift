@@ -16,7 +16,9 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/Ekhoo/Device.git", .upToNextMajor(from: "3.7.0")),
-        .package(url: "https://github.com/yannickl/DynamicColor", .upToNextMajor(from: "5.0.0"))
+        .package(url: "https://github.com/yannickl/DynamicColor", .upToNextMajor(from: "5.0.0")),
+        .package(url: "https://github.com/zenangst/Hue", exact: "5.0.1")
+        
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
