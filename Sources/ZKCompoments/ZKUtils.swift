@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Device
 
 extension Device {
     
