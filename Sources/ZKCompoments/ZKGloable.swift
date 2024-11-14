@@ -38,6 +38,7 @@ public var appDisplayName: String {
     return Bundle.main.infoDictionary?["CFBundleDisplayName"] as? String ?? ""
 }
 
+public let idfv = UIDevice.current.identifierForVendor?.uuidString 
 
 
 // MARK: - Function

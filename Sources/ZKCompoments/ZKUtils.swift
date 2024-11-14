@@ -15,3 +15,12 @@ extension Device {
         UIDevice.current.name
     }
 }
+extension Collection {
+
+    /// 防止发生数组越界
+    /// Returns the element at the specified index if it exists, otherwise nil.
+    public subscript (safe index: Index) -> Element? {
+        return indices.contains(index) ? self[index] : nil
+    }
+    
+}
