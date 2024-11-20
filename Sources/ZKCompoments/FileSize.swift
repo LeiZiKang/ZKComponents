@@ -32,4 +32,5 @@ extension Double {
     public func fileSizeGB() -> Double {
         return self/Double(1024 * 1024 * 1024)
     }
+    
 }

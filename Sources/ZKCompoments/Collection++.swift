@@ -1,20 +1,12 @@
 //
-//  Utils.swift
-//  Example
+//  File.swift
+//  ZKCompoments
 //
-//  Created by Alisa Mylnikova on 10/06/2021.
+//  Created by 雷子康 on 2024/11/21.
 //
 
-import SwiftUI
-import Device
+import Foundation
 
-extension Device {
-    
-    /// 当前设备的名字
-    public var deviceName: String {
-        UIDevice.current.name
-    }
-}
 extension Collection {
 
     /// 防止发生数组越界
