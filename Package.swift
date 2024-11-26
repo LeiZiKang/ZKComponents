@@ -17,7 +17,9 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/Ekhoo/Device.git", .upToNextMajor(from: "3.7.0")),
         .package(url: "https://github.com/yannickl/DynamicColor", .upToNextMajor(from: "5.0.0")),
-        .package(url: "https://github.com/zenangst/Hue", exact: "5.0.1")
+        .package(url: "https://github.com/zenangst/Hue", exact: "5.0.1"),
+        .package(url: "https://github.com/davidsteppenbeck/URL", .upToNextMajor(from: "1.1.1"))
+        
         
     ],
     targets: [
@@ -25,7 +27,11 @@ let package = Package(
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "ZKCompoments",
-            dependencies: [.byName(name: "Device"), .byName(name: "DynamicColor")]
+            dependencies: [
+                .byName(name: "Device"),
+                .byName(name: "DynamicColor"),
+                .byName(name: "URL")
+            ]
         ),
         .testTarget(
             name: "ZKCompomentsTests",

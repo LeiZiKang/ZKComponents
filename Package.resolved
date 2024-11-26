@@ -1,5 +1,5 @@
 {
-  "originHash" : "049a8642085f10093c94531e66fdf4b79e32b0d3fa9b75220e40a8c338d75e29",
+  "originHash" : "8ea78a358804f9a04a65b63bb00cfd4319b6c6f2fb6b8623bbd768d1f49857fa",
   "pins" : [
     {
       "identity" : "device",
@@ -17,6 +17,33 @@
       "state" : {
         "revision" : "d9beca13ca85baa50ee29832d0db5129fba69630",
         "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "hue",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zenangst/Hue",
+      "state" : {
+        "revision" : "b9d920cee4ba795fefb828d130744eee1e3d2feb",
+        "version" : "5.0.1"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-syntax.git",
+      "state" : {
+        "revision" : "2bc86522d115234d1f588efe2bcb4ce4be8f8b82",
+        "version" : "510.0.3"
+      }
+    },
+    {
+      "identity" : "url",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/davidsteppenbeck/URL",
+      "state" : {
+        "revision" : "07f2bf851840ca9c824bc703338f7d472150b654",
+        "version" : "1.1.1"
       }
     }
   ],
