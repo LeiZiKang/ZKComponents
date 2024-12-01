@@ -11,12 +11,10 @@ import Foundation
 ///
 /// - Parameter url: url
 /// - Returns: Double file size
-public func getFileSize(_ url:String) -> Double {
-    if let fileData:Data = try? Data.init(contentsOf: URL.init(fileURLWithPath: url)) {
-        let size = Double(fileData.count)
-        return size
-    }
-    return 0.00
+public func getFileSize(_ url:URL) throws  -> Double {
+    let fileData:Data = try Data.init(contentsOf: url)
+    let size = Double(fileData.count)
+    return size
 }
 
 extension Double {
