@@ -76,5 +76,4 @@ https://github.com/Ekhoo/Device
 https://github.com/yannickl/DynamicColor 
 
 
-## TODO
-1. universalverlay存在 BUG，视图出现时不能马上部署 overlay
+## 
