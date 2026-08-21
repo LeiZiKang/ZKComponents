@@ -46,3 +46,34 @@ let (background, primary, secondary, detail) = image.colors()
 ```swift
 let a = 28.3213123
 let b: String  = a.twoDecimalPlacesStr()
+```
+
+### String++
+url
+```swift
+let str = "https://github.com/"
+let url: URL? = str.onlineUrl()
+```
+
+### App Info
+``` swift
+let name = .appDisplayName
+let version = .appVersion
+```
+
+### UI
+``` swift 
+// 屏幕宽度
+let width = screenW
+
+// 屏幕高度
+let height = screenH
+```
+
+## 灵感来源
+https://github.com/zenangst/Hue 
+https://github.com/Ekhoo/Device 
+https://github.com/yannickl/DynamicColor 
+
+
+## 
